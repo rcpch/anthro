@@ -34,6 +34,7 @@ Collate:
     'prevalence.R'
     'z-score-helper.R'
     'api.R'
+    'measurements.R'
     'prevalence-compute-api.R'
     'z-score-arm-circumference-for-age.R'
     'z-score-bmi-for-age.R'
