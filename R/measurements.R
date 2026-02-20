@@ -148,7 +148,8 @@ anthro_measurements <- function(
   }
 
   # enforce allowed age and under-5 constraint
-  valid_age <- age_in_months < 60
+  # allow anthro measurements up to (but not including) 61 months
+  valid_age <- age_in_months < 61
   valid_final <- valid_idx & !is.na(merged_df[["age_in_days"]]) & merged_df[["age_in_days"]] >= allowed_age_range[1] & merged_df[["age_in_days"]] <= allowed_age_range[2] & valid_age
   y[!valid_final] <- NA_real_
 

@@ -175,9 +175,9 @@ anthro_zscore_adjusted <-
       z_precision = z_precision
     )
 
-    # we only compute zscores for children age < 60 months
-    # the age in months is unrouned
-    valid_age <- age_in_months < 60
+    # we only compute zscores for children age < 61 months
+    # the age in months is unrounded
+    valid_age <- age_in_months < 61
 
     # at last we set certain zscores to NA
     valid_zscore <- !is.na(age_in_days) &
